@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".presenter.view.EquipmentFragment">
+
+    <ImageView
+        android:id="@+id/imgItem"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_search_image" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tyCodeNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/codigo"
+        android:theme="@style/OutlinedBox"
+        app:boxStrokeColor="@color/green_toolbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCodeNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tyNameEquipment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/nome"
+        android:theme="@style/OutlinedBox"
+        app:boxStrokeColor="@color/green_toolbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNameEquipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tyTypeEquipment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/tipo"
+        android:theme="@style/OutlinedBox"
+        app:boxStrokeColor="@color/green_toolbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtTypeEquipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tyObservationEquipment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/observacao"
+        android:theme="@style/OutlinedBox"
+        app:boxStrokeColor="@color/green_toolbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtObservationEquipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tyMakEquipment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/marca"
+        android:theme="@style/OutlinedBox"
+        app:boxStrokeColor="@color/green_toolbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtMakEquipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOk"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_radius"
+        android:fontFamily="@font/ubuntu_medium"
+        android:gravity="center"
+        android:text="@string/salvar"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

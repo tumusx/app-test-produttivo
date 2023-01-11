@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/empty_state" />
+
+    <TextView
+        android:id="@+id/tittleEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:gravity="center"
+        android:text="@string/ops"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/descriptionEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:gravity="center"
+        android:text="@string/descripton_error_empty"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOk"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_radius"
+        android:fontFamily="@font/ubuntu_medium"
+        android:gravity="center"
+        android:text="@string/create"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

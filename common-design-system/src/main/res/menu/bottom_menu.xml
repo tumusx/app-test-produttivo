@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/equipments"
+        android:icon="@drawable/ic_equipment_state"
+        android:title="@string/equipment" />
+    <item
+        android:id="@+id/local"
+        android:icon="@drawable/ic_add_location_state"
+        android:title="@string/local" />
+
+</menu>

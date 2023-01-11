@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ProduttivoTeste</string>
+    <string name="equipment">Equipamentos</string>
+    <string name="local">Locais</string>
+    <string name="ops">Ops...</string>
+    <string name="nome">Nome *</string>
+    <string name="nome_local">Nome do local *</string>
+    <string name="nome_local_pertencido_descricao">Se o local pertence a outro local, informar.</string>
+    <string name="nome_local_pertencido">Nome do local pertencido</string>
+    <string name="tipo">Tipo *</string>
+    <string name="codigo">Código *</string>
+    <string name="marca">Marca *</string>
+    <string name="salvar">Salvar</string>
+    <string name="observacao">Observação</string>
+    <string name="descripton_error_empty">Notamos que você não possui itens cadastrados.\n Clique no botão abaixo para cadastrar e aproveitar nosso aplicativo por completo!</string>
+    <string name="create">Cadastrar</string>
+</resources>
