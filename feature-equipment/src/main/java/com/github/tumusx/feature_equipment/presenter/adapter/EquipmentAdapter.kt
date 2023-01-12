@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.github.tumusx.feature_equipment.databinding.EquipmentContainerItemsBinding
 import com.github.tumusx.feature_equipment.domain.EquipmentDTO
-import com.github.tumusx.feature_equipment.util.decodeImage
+import com.github.tumusx.feature_equipment.util.ImageUtils
 
 class EquipmentAdapter(private val callBack: (EquipmentDTO) -> Unit) : RecyclerView.Adapter<EquipmentAdapter.EquipmentViewHolder>() {
     private var equipmentItems = emptyList<EquipmentDTO>()
@@ -15,7 +15,7 @@ class EquipmentAdapter(private val callBack: (EquipmentDTO) -> Unit) : RecyclerV
         RecyclerView.ViewHolder(binding.root) {
         fun configureUI(equipment: EquipmentDTO) {
             binding.imgEquipment.setImageBitmap(
-                decodeImage(
+                ImageUtils().decodeImage(
                     equipment.imageEquipment ?: "",
                     binding.root.context
                 )

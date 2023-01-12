@@ -7,8 +7,6 @@ import android.provider.MediaStore
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.core.view.drawToBitmap
 import androidx.fragment.app.viewModels
@@ -20,8 +18,7 @@ import com.github.tumusx.feature_equipment.domain.LocalDTO
 import com.github.tumusx.feature_equipment.presenter.common.UpdateListEquipments
 import com.github.tumusx.feature_equipment.presenter.common.messageErrorSnackBar
 import com.github.tumusx.feature_equipment.presenter.viewModel.CreateOrUpdateViewModel
-import com.github.tumusx.feature_equipment.util.decodeImage
-import com.github.tumusx.feature_equipment.util.encodeImage
+import com.github.tumusx.feature_equipment.util.ImageUtils
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -66,7 +63,7 @@ class CreateOrUpdateBottomSheet : BottomSheetDialogFragment() {
                 typeEquipment = binding.txtCodeNumber.text.toString(),
                 observation = binding.txtObservationEquipment.text.toString(),
                 localEquipment = LocalDTO(nameLocal = binding.txtLocalEquipment.text.toString()),
-                imageEquipment = encodeImage(binding.imgItem.drawToBitmap())
+                imageEquipment = ImageUtils().encodeImage(binding.imgItem.drawToBitmap())
             )
             if (isUpdateItem) {
                 viewModel.updateEquipmentDTO(equipmentDTO)
@@ -126,7 +123,7 @@ class CreateOrUpdateBottomSheet : BottomSheetDialogFragment() {
     private fun updateUiEdit() {
         equipmentDTO?.let { equipment ->
             binding.imgItem.setImageBitmap(equipment.imageEquipment?.let { img ->
-                decodeImage(
+                ImageUtils().decodeImage(
                     img,
                     requireContext()
                 )
