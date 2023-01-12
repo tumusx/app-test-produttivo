@@ -29,7 +29,7 @@ class EquipmentFragment : Fragment() {
     private lateinit var binding: FragmentEquipmentBinding
     private val viewModel: EquipmentViewModel by viewModels()
     private lateinit var equipmentAdapter: EquipmentAdapter
-    private val equipmentList: List<EquipmentDTO>? = null
+    private var equipmentList: List<EquipmentDTO>? = null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -64,7 +64,9 @@ class EquipmentFragment : Fragment() {
     private fun stateUI(stateUI: StateUI) {
         val visibilityProgressBar = when (stateUI) {
             is StateUI.Success<*> -> {
-                configureAdapterItems((stateUI.data as List<EquipmentDTO>))
+                equipmentList = stateUI.data as List<EquipmentDTO>
+                equipmentList?.let {
+                configureAdapterItems(it) }
                 View.GONE
             }
 

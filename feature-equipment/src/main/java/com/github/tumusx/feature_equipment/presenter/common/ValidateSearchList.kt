@@ -7,9 +7,10 @@ class ValidateSearchList(private val equipmentList: List<EquipmentDTO>) {
     fun searchListEquipment(typesInput: String): List<EquipmentDTO> {
         val searchResult = mutableListOf<EquipmentDTO>()
         for (itemEquipmentList in equipmentList) {
-            if (itemEquipmentList.codeEquipment.toString() == typesInput || (itemEquipmentList.localEquipment?.nameLocal?.equals(
+            if (itemEquipmentList.codeEquipment.toString()
+                    .contains(typesInput) || (itemEquipmentList.localEquipment?.nameLocal?.contains(
                     typesInput
-                ) == true) || itemEquipmentList.nameEquipment == typesInput
+                ) == true) || itemEquipmentList.nameEquipment.contains(typesInput)
             ) {
                 searchResult.add(itemEquipmentList)
             }
