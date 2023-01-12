@@ -10,26 +10,30 @@
         <entry key="..\:/ProduttivoTeste/common-design-system/src/main/res/drawable/ic_add_location.xml" value="0.266" />
         <entry key="..\:/ProduttivoTeste/common-design-system/src/main/res/drawable/ic_add_location_inative.xml" value="0.266" />
         <entry key="..\:/ProduttivoTeste/common-design-system/src/main/res/drawable/ic_add_location_state.xml" value="0.266" />
+        <entry key="..\:/ProduttivoTeste/common-design-system/src/main/res/drawable/ic_baseline_create_24.xml" value="0.266" />
+        <entry key="..\:/ProduttivoTeste/common-design-system/src/main/res/drawable/ic_baseline_search_24.xml" value="0.266" />
         <entry key="..\:/ProduttivoTeste/common-design-system/src/main/res/drawable/ic_equipment.xml" value="0.342" />
         <entry key="..\:/ProduttivoTeste/common-design-system/src/main/res/drawable/ic_equipment_inative.xml" value="0.266" />
         <entry key="..\:/ProduttivoTeste/common-design-system/src/main/res/drawable/ic_equipment_state.xml" value="0.266" />
         <entry key="..\:/ProduttivoTeste/common-design-system/src/main/res/drawable/rounded_container.xml" value="0.266" />
         <entry key="..\:/ProduttivoTeste/common-design-system/src/main/res/drawable/rounded_container_green.xml" value="0.266" />
+        <entry key="..\:/ProduttivoTeste/common-design-system/src/main/res/drawable/search_view_custom.xml" value="0.266" />
         <entry key="..\:/ProduttivoTeste/common-design-system/src/main/res/layout/empty_layout_state.xml" value="1.4930555555555556" />
         <entry key="..\:/ProduttivoTeste/common-design-system/src/main/res/menu/bottom_menu.xml" value="0.33489583333333334" />
         <entry key="..\:/ProduttivoTeste/common-design-system/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.266" />
         <entry key="..\:/ProduttivoTeste/common-design-system/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.266" />
         <entry key="..\:/ProduttivoTeste/feature-equipment/src/main/res/layout/bottom_sheet_register_or_update.xml" value="1.4930555555555556" />
+        <entry key="..\:/ProduttivoTeste/feature-equipment/src/main/res/layout/equipment_container_items.xml" value="0.50390625" />
         <entry key="..\:/ProduttivoTeste/feature-equipment/src/main/res/layout/fragment_create_or_update_bottom_sheet.xml" value="0.50390625" />
         <entry key="..\:/ProduttivoTeste/feature-equipment/src/main/res/layout/fragment_create_or_update_bottom_sheet_list_dialog.xml" value="1.5" />
         <entry key="..\:/ProduttivoTeste/feature-equipment/src/main/res/layout/fragment_create_or_update_bottom_sheet_list_dialog_item.xml" value="1.4930555555555556" />
         <entry key="..\:/ProduttivoTeste/feature-equipment/src/main/res/layout/fragment_equipament.xml" value="0.31875" />
-        <entry key="..\:/ProduttivoTeste/feature-equipment/src/main/res/layout/fragment_equipment.xml" value="0.3359375" />
+        <entry key="..\:/ProduttivoTeste/feature-equipment/src/main/res/layout/fragment_equipment.xml" value="0.5" />
         <entry key="..\:/ProduttivoTeste/feature-local/src/main/res/layout/fragment_local.xml" value="0.5" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

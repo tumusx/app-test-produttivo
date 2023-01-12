@@ -3,8 +3,14 @@
     <string name="equipment">Equipamentos</string>
     <string name="local">Locais</string>
     <string name="ops">Ops...</string>
+    <string name="success">Item %s com sucesso!</string>
+    <string name="cadastrado">cadastrado</string>
+    <string name="atualizado">atualizado</string>
+    <string name="nenhum_item_encontrado">Nenhum equipamento encontrado.</string>
+    <string name="error_unknow">Ops... Aconteceu um erro desconhecido.\nTente novamente mais tarde!</string>
     <string name="nome">Nome *</string>
     <string name="nome_local">Nome do local *</string>
+    <string name="create_new_item">Cadastrar novo equipamento</string>
     <string name="nome_local_pertencido_descricao">Se o local pertence a outro local, informar.</string>
     <string name="nome_local_pertencido">Nome do local pertencido</string>
     <string name="tipo">Tipo *</string>

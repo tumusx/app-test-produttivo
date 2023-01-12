@@ -27,6 +27,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtCodeNumber"
             android:layout_width="match_parent"
+            android:inputType="number"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -86,6 +87,21 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtMakEquipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tyLocalEquipment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/nome_local"
+        android:theme="@style/OutlinedBox"
+        app:boxStrokeColor="@color/green_toolbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtLocalEquipment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>

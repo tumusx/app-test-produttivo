@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/common-baseTest" />
             <option value="$PROJECT_DIR$/common-design-system" />
+            <option value="$PROJECT_DIR$/common-util" />
             <option value="$PROJECT_DIR$/core-database" />
             <option value="$PROJECT_DIR$/feature-equipment" />
             <option value="$PROJECT_DIR$/feature-local" />

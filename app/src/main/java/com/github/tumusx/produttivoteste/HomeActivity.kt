@@ -7,7 +7,9 @@ import com.github.tumusx.common_design_system.R
 import com.github.tumusx.feature_equipment.presenter.view.EquipmentFragment
 import com.github.tumusx.feature_local.presenter.view.LocalFragment
 import com.github.tumusx.produttivoteste.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
