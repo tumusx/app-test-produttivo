@@ -30,7 +30,7 @@ class EquipmentViewModel @Inject constructor(
             val response = equipmentRepository.getEquipmentItems()
             try {
                 if (response == null) {
-                    _stateUI.postValue(StateUI.Error("Ops... Aconteceu um erro inesperado"))
+                    _stateUI.postValue(StateUI.EmptyListError)
                     return@launch
                 }
                 if (response.isNotEmpty()) {
@@ -38,7 +38,7 @@ class EquipmentViewModel @Inject constructor(
                         _stateUI.postValue(StateUI.Success(equipmentsItems))
                     }
                 } else {
-                    _stateUI.postValue(StateUI.Error("Ops... Você não possui itens cadastrados."))
+                    _stateUI.postValue(StateUI.EmptyListError)
                 }
             } catch (exception: Exception) {
                 _stateUI.postValue(StateUI.Error("Ops... Aconteceu um erro inesperado"))

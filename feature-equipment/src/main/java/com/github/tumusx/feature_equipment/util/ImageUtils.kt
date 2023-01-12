@@ -22,7 +22,7 @@ fun decodeImage(base64String: String, context: Context): Bitmap? {
         BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.size)
     }catch (illegalException: IllegalArgumentException) {
         illegalException.printStackTrace()
-        val drawableImage = com.google.android.material.R.drawable.mtrl_ic_error
+        val drawableImage = com.github.tumusx.common_design_system.R.drawable.ic_add_location_inative
         AppCompatResources.getDrawable(context, drawableImage)?.toBitmap()
     }
 }

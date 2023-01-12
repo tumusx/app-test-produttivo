@@ -67,15 +67,21 @@ class EquipmentFragment : Fragment() {
                 equipmentList = stateUI.data as List<EquipmentDTO>
                 equipmentList?.let {
                 configureAdapterItems(it) }
+                binding.llEmptyListContainer.root.visibility = View.GONE
+                binding.searchView.visibility = View.VISIBLE
                 View.GONE
             }
 
             is StateUI.Error -> {
+                binding.llEmptyListContainer.root.visibility = View.GONE
+                binding.searchView.visibility = View.VISIBLE
                 binding.root.messageErrorSnackBar()
                 View.GONE
             }
 
             is StateUI.IsLoading -> {
+                binding.llEmptyListContainer.root.visibility = View.GONE
+                binding.searchView.visibility = View.VISIBLE
                 View.VISIBLE
             }
 
@@ -113,14 +119,17 @@ class EquipmentFragment : Fragment() {
 
     private fun searchListValidate(typeInput: String) {
         val searchItemValidate = equipmentList?.let { ValidateSearchList(it) }
-        val equipmentsList = searchItemValidate?.searchListEquipment(typeInput)
-        if (equipmentsList?.isNotEmpty() == true) {
-            setListEquipment(equipmentsList)
-        } else {
+        val resultSearchList = searchItemValidate?.searchListEquipment(typeInput)
+        if(resultSearchList?.isEmpty() == true){
             viewLifecycleOwner.lifecycleScope.launch {
                 delay(400)
                 Snackbar.make(binding.root, getString(R.string.nenhum_item_encontrado),Snackbar.LENGTH_LONG).show()
             }
+            return
+        }
+
+        if (resultSearchList?.isNotEmpty() == true) {
+            setListEquipment(resultSearchList)
         }
     }
 

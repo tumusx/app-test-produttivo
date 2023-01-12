@@ -10,6 +10,7 @@
     tools:context=".presenter.view.EquipmentFragment">
 
     <ImageView
+        android:layout_marginTop="10dp"
         android:id="@+id/imgItem"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -96,7 +97,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:hint="@string/nome_local"
+        android:hint="@string/nome_local_not_required"
         android:theme="@style/OutlinedBox"
         app:boxStrokeColor="@color/green_toolbar">
 
